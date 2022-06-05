@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polícia Federal</title>
+</head>
+<body>
+    <h1>Verificando Nacionalidade</h1>
+
+    Digite seu país de origem  <input type="text" name="nacionalidade" id="nacionalidade">
+    <input type="button" value="verificar" onclick="calcular()">
+    <div id='res'>
+
+    </div>
+    <script>
+        function calcular(){
+        var nacionalidade = window.document.querySelector('input#nacionalidade')
+        var res = window.document.querySelector('div#res')
+        var nacionalidade = String(nacionalidade.value)
+        res.innerHTML = `Seu país é ${nacionalidade}`
+        if (nacionalidade == 'brasil') {
+            res.innerHTML += `<p>Você é brasileiro!!</p>`
+        } else {
+            res.innerHTML += `<p>Você é estrangeiro. Seja bem-vindo(a)!</p>`
+        }
+    }
+    </script>
+</body>
+</html>
+
+<!--var country = 'Cuba'
+console.log(`Vivendo em ${country}`)
+if (country == 'Brasil'){
+    console.log('Você é brasileiro')
+} else {
+    console.log('Você é estrangeiro!')
+}
+-->

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restart Coding</title>
+    <link rel="stylesheet" href="styleform.css">
+</head>
+<body>
+    <form method="POST" action="meuprimeiroform.php">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label>
+                Primeiro Nome:<br>
+                <input type="text">
+            </label> <br>
+            <label>
+                Sobrenome:<br>
+                <input type="text">
+            </label> <br>
+            <label for="">
+                Idade: <br>
+                <input type="number">
+            </label> <br>
+
+            <label for="">
+                Foto: <br>
+                <input type="file" accept="image/*">
+            </label> <br>
+        </fieldset>
+        <fieldset>
+            <legend>Dados Profissionais</legend>
+        
+            <label for=""> Nome da Empresa:<br>
+                <input type="text" required minlength="3">
+            </label><br>
+            <label for="">
+                Último cargo: <br>
+                <input type="text">
+            </label><br>
+        </fieldset>
+
+        <button>Cadastrar</button>
+    </form>
+
+    
+</body>
+</html>
