@@ -69,6 +69,7 @@ section.imagem > p {
     display: inline-block;
     background-color: rgba(48, 48, 48, 0.849);
     padding: 15px; 
+    border-radius: 10px;
 }
 
 section#img01 {
